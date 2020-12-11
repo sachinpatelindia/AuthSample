@@ -24,7 +24,7 @@ namespace AuthSample.Controllers
         public async Task<IActionResult> Login(LoginRequest loginRequest)
         {
             var response = await _userService.Login(loginRequest);
-            return Ok(loginRequest);
+            return Ok(response);
         }
     }
 }
